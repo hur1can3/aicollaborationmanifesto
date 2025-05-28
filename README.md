@@ -2,81 +2,81 @@
 
 ## Table of Contents
 
-1. [Overview](https://gemini.google.com/app/b40a0860b9c83d99#1-overview "null")
-   
-   - [1.0. Preamble](https://gemini.google.com/app/b40a0860b9c83d99#10-preamble "null")
-   
-   - [1.1. Purpose of This Manifesto](https://gemini.google.com/app/b40a0860b9c83d99#11-purpose-of-this-manifesto "null")
-   
-   - [1.2. Guiding Principles for Broader Applications](https://gemini.google.com/app/b40a0860b9c83d99#12-guiding-principles-for-broader-applications "null")
-   
-   - [1.3. TLDR: The Basic Collaboration Flow](https://gemini.google.com/app/b40a0860b9c83d99#13-tldr-the-basic-collaboration-flow "null")
+1. [Overview](#1-overview "null")
 
-2. [Core Principles](https://gemini.google.com/app/b40a0860b9c83d99#2-core-principles "null")
+   - [1.0. Preamble](#10-preamble "null")
 
-3. [Communication Protocol & Data Format](https://gemini.google.com/app/b40a0860b9c83d99#3-communication-protocol--data-format "null")
-   
-   - [3.1. Manifest File (`YYYYMMDD_HHMMSS_UNIQUEID_aitaskinput.json`)](https://gemini.google.com/app/b40a0860b9c83d99#31-manifest-file-yyyymmdd_hhmmss_uniqueid_aitaskinputjson "null")
-   
-   - [3.2. Content Chunks File (`YYYYMMDD_HHMMSS_UNIQUEID_project_content.txt`)](https://gemini.google.com/app/b40a0860b9c83d99#32-content-chunks-file-yyyymmdd_hhmmss_uniqueid_project_contenttxt "null")
+   - [1.1. Purpose of This Manifesto](#11-purpose-of-this-manifesto "null")
 
-4. [File Handling Specifics](https://gemini.google.com/app/b40a0860b9c83d99#4-file-handling-specifics "null")
-   
-   - [4.1. New Files & Root Folder Files](https://gemini.google.com/app/b40a0860b9c83d99#41-new-files--root-folder-files "null")
-   
-   - [4.2. Updating Existing Files (`update_text_file`)](https://gemini.google.com/app/b40a0860b9c83d99#42-updating-existing-files-update_text_file "null")
-   
-   - [4.3. Project Files (`.csproj`, `.sln`)](https://gemini.google.com/app/b40a0860b9c83d99#43-project-files-csproj-sln "null")
-   
-   - [4.4. Binary Files (Small & Large Multipart)](https://gemini.google.com/app/b40a0860b9c83d99#44-binary-files-small--large-multipart "null")
-   
-   - [4.5. Handling Non-Code and Structured Data](https://gemini.google.com/app/b40a0860b9c83d99#45-handling-non-code-and-structured-data "null")
+   - [1.2. Guiding Principles for Broader Applications](#12-guiding-principles-for-broader-applications "null")
 
-5. [Workflow](https://gemini.google.com/app/b40a0860b9c83d99#5-workflow "null")
+   - [1.3. TLDR: The Basic Collaboration Flow](#13-tldr-the-basic-collaboration-flow "null")
 
-6. [Considerations for AI Agent Implementation](https://gemini.google.com/app/b40a0860b9c83d99#6-considerations-for-ai-agent-implementation "null")
+2. [Core Principles](#2-core-principles "null")
 
-7. [Safety, Ethics, and Responsible AI Use](https://gemini.google.com/app/b40a0860b9c83d99#7-safety-ethics-and-responsible-ai-use "null")
-   
-   - [7.1. Content Sensitivity and Appropriateness](https://gemini.google.com/app/b40a0860b9c83d99#71-content-sensitivity-and-appropriateness "null")
-   
-   - [7.2. Data Privacy and User Information](https://gemini.google.com/app/b40a0860b9c83d99#72-data-privacy-and-user-information "null")
-   
-   - [7.3.](https://gemini.google.com/app/b40a0860b9c83d99#73-source-attribution-and-verification-for-factual-content "null") Source Attribution and Verification [(for Factual Content)](https://gemini.google.com/app/b40a0860b9c83d99#73-source-attribution-and-verification-for-factual-content "null")
-   
-   - [7.4. User Feedback on Content Quality and Safety](https://gemini.google.com/app/b40a0860b9c83d99#74-user-feedback-on-content-quality-and-safety "null")
+3. [Communication Protocol & Data Format](#3-communication-protocol--data-format "null")
 
-8. [AI Agent Capabilities and Constraints](https://gemini.google.com/app/b40a0860b9c83d99#8-ai-agent-capabilities-and-constraints "null")
+   - [3.1. Manifest File (`YYYYMMDD_HHMMSS_UNIQUEID_aitaskinput.json`)](#31-manifest-file-yyyymmdd_hhmmss_uniqueid_aitaskinputjson "null")
 
-9. [User Environment and Tooling](https://gemini.google.com/app/b40a0860b9c83d99#9-user-environment-and-tooling "null")
+   - [3.2. Content Chunks File (`YYYYMMDD_HHMMSS_UNIQUEID_project_content.txt`)](#32-content-chunks-file-yyyymmdd_hhmmss_uniqueid_project_contenttxt "null")
 
-10. [Customization, Usage Scenarios, and Future Directions](https://gemini.google.com/app/b40a0860b9c83d99#10-customization-usage-scenarios-and-future-directions "null")
-    
-    - [10.1. Customizing the Manifesto](https://gemini.google.com/app/b40a0860b9c83d99#101-customizing-the-manifesto "null")
-    
-    - [10.2. Possible Future Ideas & Enhancements (Beyond v1.0)](https://gemini.google.com/app/b40a0860b9c83d99#102-possible-future-ideas--enhancements-beyond-v10 "null")
-    
-    - [10.3. Usage Notes & Best Practices](https://gemini.google.com/app/b40a0860b9c83d99#103-usage-notes--best-practices "null")
-    
-    - [10.4. Concrete Usage Scenarios (Examples)](https://gemini.google.com/app/b40a0860b9c83d99#104-concrete-usage-scenarios-examples "null")
+4. [File Handling Specifics](#4-file-handling-specifics "null")
 
-11. [Repository Contents & Examples](https://gemini.google.com/app/b40a0860b9c83d99#11-repository-contents--examples "null")
-    
-    - [11.1. Key Files in this Repository](https://gemini.google.com/app/b40a0860b9c83d99#111-key-files-in-this-repository "null")
-    
-    - [11.2. Using the Examples](https://gemini.google.com/app/b40a0860b9c83d99#112-using-the-examples "null")
+   - [4.1. New Files & Root Folder Files](#41-new-files--root-folder-files "null")
 
-12. [License](https://gemini.google.com/app/b40a0860b9c83d99#12-license "null")
+   - [4.2. Updating Existing Files (`update_text_file`)](#42-updating-existing-files-update_text_file "null")
 
-13. [Contribution Guidelines](https://gemini.google.com/app/b40a0860b9c83d99#13-contribution-guidelines "null")
+   - [4.3. Project Files (`.csproj`, `.sln`)](#43-project-files-csproj-sln "null")
 
-14. [Frequently Asked Questions (FAQ)](https://gemini.google.com/app/b40a0860b9c83d99#14-frequently-asked-questions-faq "null")
+   - [4.4. Binary Files (Small & Large Multipart)](#44-binary-files-small--large-multipart "null")
 
-15. [Appendices](https://gemini.google.com/app/b40a0860b9c83d99#15-appendices "null")
-    
-    - [15.1. Appendix A: `aitaskinput.json` (v1.0) - Detailed Structure and Task Types](https://gemini.google.com/app/b40a0860b9c83d99#151-appendix-a-aitaskinputjson-v10---detailed-structure-and-task-types "null")
-    
-    - [15.2.](https://gemini.google.com/app/b40a0860b9c83d99#152-appendix-b-ai-agent-capabilities-v10---detailed-fields "null") Appendix B: AI Agent Capabilities (v1.0) [- Detailed Fields](https://gemini.google.com/app/b40a0860b9c83d99#152-appendix-b-ai-agent-capabilities-v10---detailed-fields "null")
+   - [4.5. Handling Non-Code and Structured Data](#45-handling-non-code-and-structured-data "null")
+
+5. [Workflow](#5-workflow "null")
+
+6. [Considerations for AI Agent Implementation](#6-considerations-for-ai-agent-implementation "null")
+
+7. [Safety, Ethics, and Responsible AI Use](#7-safety-ethics-and-responsible-ai-use "null")
+
+   - [7.1. Content Sensitivity and Appropriateness](#71-content-sensitivity-and-appropriateness "null")
+
+   - [7.2. Data Privacy and User Information](#72-data-privacy-and-user-information "null")
+
+   - [7.3.](#73-source-attribution-and-verification-for-factual-content "null") Source Attribution and Verification [(for Factual Content)](#73-source-attribution-and-verification-for-factual-content "null")
+
+   - [7.4. User Feedback on Content Quality and Safety](#74-user-feedback-on-content-quality-and-safety "null")
+
+8. [AI Agent Capabilities and Constraints](#8-ai-agent-capabilities-and-constraints "null")
+
+9. [User Environment and Tooling](#9-user-environment-and-tooling "null")
+
+10. [Customization, Usage Scenarios, and Future Directions](#10-customization-usage-scenarios-and-future-directions "null")
+
+    - [10.1. Customizing the Manifesto](#101-customizing-the-manifesto "null")
+
+    - [10.2. Possible Future Ideas & Enhancements (Beyond v1.0)](#102-possible-future-ideas--enhancements-beyond-v10 "null")
+
+    - [10.3. Usage Notes & Best Practices](#103-usage-notes--best-practices "null")
+
+    - [10.4. Concrete Usage Scenarios (Examples)](#104-concrete-usage-scenarios-examples "null")
+
+11. [Repository Contents & Examples](#11-repository-contents--examples "null")
+
+    - [11.1. Key Files in this Repository](#111-key-files-in-this-repository "null")
+
+    - [11.2. Using the Examples](#112-using-the-examples "null")
+
+12. [License](#12-license "null")
+
+13. [Contribution Guidelines](#13-contribution-guidelines "null")
+
+14. [Frequently Asked Questions (FAQ)](#14-frequently-asked-questions-faq "null")
+
+15. [Appendices](#15-appendices "null")
+
+    - [15.1. Appendix A: `aitaskinput.json` (v1.0) - Detailed Structure and Task Types](#151-appendix-a-aitaskinputjson-v10---detailed-structure-and-task-types "null")
+
+    - [15.2.](#152-appendix-b-ai-agent-capabilities-v10---detailed-fields "null") Appendix B: AI Agent Capabilities (v1.0) [- Detailed Fields](#152-appendix-b-ai-agent-capabilities-v10---detailed-fields "null")
 
 ## 1. Overview
 
@@ -103,23 +103,23 @@ Beyond code, this framework is intended to support a wide array of tasks, includ
 The collaboration process detailed herein relies on three key components for each delivery iteration:
 
 1. **A Manifest File (e.g., `YYYYMMDD_HHMMSS_UNIQUEID_aitaskinput.json`):** A JSON file detailing the current delivery's scope. It includes:
-   
+
    - Overall project/task context.
-   
+
    - A list of tasks for *this specific delivery*.
-   
+
    - Metadata for each asset (e.g., file paths).
-   
+
    - A unique `current_run_correlation_id` for tracking this interaction.
-   
+
    - A `manifest_format_version` (referring to this Manifesto's version, e.g., "1.0").
-   
+
    - **Important:** File paths **must** use forward slashes (`/`) for cross-platform compatibility.
 
 2. **A Content Chunks File (e.g., `YYYYMMDD_HHMMSS_UNIQUEID_project_content.txt`):** This text file contains the actual data for the tasks listed in the accompanying manifest file.
-   
+
    - It **must** begin with a "run log" chunk, which includes the `run_correlation_id` and AI notes for the current delivery.
-   
+
    - Subsequent chunks contain the content for other tasks, each clearly delimited.
 
 3. **A Client-Side Script (e.g., `AIDumpEnhanced.ps1`):** A versioned PowerShell script (or a similar tool chosen by the user) that reads the manifest and content chunks file to create or update files and data on the user's system.
@@ -131,9 +131,9 @@ For those looking for a quick overview:
 1. **User Asks AI:** You request something from the AI (e.g., "write code for X," "summarize Y," "plan Z").
 
 2. **AI Prepares Delivery:** The AI plans the work and creates two main files, typically named with a shared timestamp and unique ID (e.g., `20250528_131500_dEfGhI_aitaskinput.json` and `20250528_131500_dEfGhI_project_content.txt`):
-   
+
    - The `..._aitaskinput.json` file: A "to-do list" for *this specific delivery*, including the unique `current_run_correlation_id`.
-   
+
    - The `..._project_content.txt` file: The actual content, starting with a log of what the AI did for this run (including the correlation ID) and any notes, followed by the requested information/files.
 
 3. **AI Delivers Files:** You receive these two files from the AI.
@@ -282,13 +282,13 @@ The workflow described below outlines the typical interaction, with the AI choos
 1. **User Request.**
 
 2. **AI Processing:**
-   
+
    - AI determines files/outputs for the current delivery batch, selecting appropriate task types.
-   
+
    - **Correlation ID & Versioning:** Generates `current_run_correlation_id`. Notes current `manifest_format_version`. Generates a unique identifier string (e.g., `dEfGhI`) for filenames.
-   
+
    - **Log File Generation:** Prepares `file_path` (e.g., `project_logs/YYYYMMDD_HHMMSS_UNIQUEID_ai_collab_run.log`) and content for the run log.
-   
+
    - **Manifest & Content File Preparation:** AI prepares the `YYYYMMDD_HHMMSS_UNIQUEID_aitaskinput.json` listing *only* tasks for this delivery and the corresponding `YYYYMMDD_HHMMSS_UNIQUEID_project_content.txt`.
 
 3. **AI Response:** AI delivers the uniquely named `..._aitaskinput.json` and `..._project_content.txt`.
@@ -468,13 +468,13 @@ This Manifesto provides a foundational framework (v1.0), designed for evolution.
   1. Generates `run_correlation_id` (e.g., `run_20250528140000_dev001`).
   
   2. Prepares `20250528_140000_dev001_aitaskinput.json` (v1.0) with tasks:
-     
+
      - Task for `project_logs/20250528_140000_dev001_ai_collab_run.log`.
-     
+
      - Task for `src/app.py` (`create_text_file`).
-     
+
      - Task for `requirements.txt` (`create_text_file`).
-     
+
      - Task for `README.md` (`create_text_file`).
   
   3. Prepares `20250528_140000_dev001_project_content.txt` with corresponding chunks.
@@ -494,9 +494,9 @@ This Manifesto provides a foundational framework (v1.0), designed for evolution.
   1. Generates `run_correlation_id`.
   
   2. Prepares manifest with tasks:
-     
+
      - Log file task.
-     
+
      - Task for `research/renewable_energy_challenges.md` (`generate_prose`, `output_format_hint: "markdown"`).
   
   3. Prepares content file with run log (AI notes: "Summarized challenges... Simulated sources listed... Disclaimer...") and Markdown content.
@@ -510,11 +510,11 @@ This Manifesto provides a foundational framework (v1.0), designed for evolution.
   1. Generates `run_correlation_id`.
   
   2. Prepares manifest with tasks:
-     
+
      - Log file task.
-     
+
      - Task for `lifestyle/meal_plans/vegetarian_week1.json` (`generate_structured_data`, `output_format_hint: "json"`).
-     
+
      - Task for `lifestyle/shopping_lists/vegetarian_week1_shop.txt` (`create_text_file`).
   
   3. Prepares content file with run log and corresponding data chunks.
@@ -528,9 +528,9 @@ This Manifesto provides a foundational framework (v1.0), designed for evolution.
   1. Generates `run_correlation_id`.
   
   2. Prepares manifest with tasks:
-     
+
      - Log file task.
-     
+
      - Task for `comparisons/laptops_graphic_design.md` (`generate_prose`, `output_format_hint: "markdown_table"`).
   
   3. Prepares content file with run log and Markdown table content.
@@ -548,7 +548,7 @@ This GitHub repository serves as the home for the AI Collaboration Manifesto and
   - An example `..._aitaskinput.json` file.
   
   - An example ..._project_content.txt file.
-    
+
     These examples illustrate how an AI (using "Gemini AI" as the agent_name for demonstration) would structure its output for that specific task type.
   
   - [Example: `create_text_file`](https://gemini.google.com/app/examples/create_text_file/ "null")
@@ -641,11 +641,11 @@ Q6: Why do filenames for manifest and content files include a timestamp and uniq
 
 A6: This convention (e.g., YYYYMMDD_HHMMSS_UNIQUEID_aitaskinput.json) helps in several ways:
 
-* Easy Sorting: Files are sorted chronologically by default in most file explorers.
+- Easy Sorting: Files are sorted chronologically by default in most file explorers.
 
-* Uniqueness: Prevents overwriting previous deliveries if saved in the same directory.
+- Uniqueness: Prevents overwriting previous deliveries if saved in the same directory.
 
-* Direct Correlation: Clearly pairs a specific manifest file with its corresponding content file.
+- Direct Correlation: Clearly pairs a specific manifest file with its corresponding content file.
 
 Q7: How should the AI manage the overall list of pending tasks if aitaskinput.json only contains tasks for the current run?
 
