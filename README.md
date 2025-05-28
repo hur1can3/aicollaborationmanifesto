@@ -1,70 +1,70 @@
-## AI Collaboration Manifesto (v1.0)
+# AI Collaboration Manifesto (v1.0)
 
 ## Table of Contents
 
-1. Overview
+1. [Overview](https://gemini.google.com/app/b40a0860b9c83d99#1-overview "null")
    
-   1.0. Preamble
+   - [1.0. Preamble](https://gemini.google.com/app/b40a0860b9c83d99#10-preamble "null")
    
-   1.1. Purpose of This Manifesto
+   - [1.1. Purpose of This Manifesto](https://gemini.google.com/app/b40a0860b9c83d99#11-purpose-of-this-manifesto "null")
    
-   1.2. Guiding Principles for Broader Applications
+   - [1.2. Guiding Principles for Broader Applications](https://gemini.google.com/app/b40a0860b9c83d99#12-guiding-principles-for-broader-applications "null")
    
-   1.3. TLDR: The Basic Collaboration Flow
+   - [1.3. TLDR: The Basic Collaboration Flow](https://gemini.google.com/app/b40a0860b9c83d99#13-tldr-the-basic-collaboration-flow "null")
 
 2. [Core Principles](https://gemini.google.com/app/b40a0860b9c83d99#2-core-principles "null")
 
-3. Communication Protocol & Data Format
+3. [Communication Protocol & Data Format](https://gemini.google.com/app/b40a0860b9c83d99#3-communication-protocol--data-format "null")
    
-   3.1. Manifest File (YYYYMMDD_HHMMSS_UNIQUEID_aitaskinput.json)
+   - [3.1. Manifest File (`YYYYMMDD_HHMMSS_UNIQUEID_aitaskinput.json`)](https://gemini.google.com/app/b40a0860b9c83d99#31-manifest-file-yyyymmdd_hhmmss_uniqueid_aitaskinputjson "null")
    
-   3.2. Content Chunks File (YYYYMMDD_HHMMSS_UNIQUEID_project_content.txt)
+   - [3.2. Content Chunks File (`YYYYMMDD_HHMMSS_UNIQUEID_project_content.txt`)](https://gemini.google.com/app/b40a0860b9c83d99#32-content-chunks-file-yyyymmdd_hhmmss_uniqueid_project_contenttxt "null")
 
-4. File Handling Specifics
+4. [File Handling Specifics](https://gemini.google.com/app/b40a0860b9c83d99#4-file-handling-specifics "null")
    
-   4.1. New Files & Root Folder Files
+   - [4.1. New Files & Root Folder Files](https://gemini.google.com/app/b40a0860b9c83d99#41-new-files--root-folder-files "null")
    
-   4.2. Updating Existing Files (update_text_file)
+   - [4.2. Updating Existing Files (`update_text_file`)](https://gemini.google.com/app/b40a0860b9c83d99#42-updating-existing-files-update_text_file "null")
    
-   4.3. Project Files (.csproj, .sln)
+   - [4.3. Project Files (`.csproj`, `.sln`)](https://gemini.google.com/app/b40a0860b9c83d99#43-project-files-csproj-sln "null")
    
-   4.4. Binary Files (Small & Large Multipart)
+   - [4.4. Binary Files (Small & Large Multipart)](https://gemini.google.com/app/b40a0860b9c83d99#44-binary-files-small--large-multipart "null")
    
-   4.5. Handling Non-Code and Structured Data
+   - [4.5. Handling Non-Code and Structured Data](https://gemini.google.com/app/b40a0860b9c83d99#45-handling-non-code-and-structured-data "null")
 
 5. [Workflow](https://gemini.google.com/app/b40a0860b9c83d99#5-workflow "null")
 
 6. [Considerations for AI Agent Implementation](https://gemini.google.com/app/b40a0860b9c83d99#6-considerations-for-ai-agent-implementation "null")
 
-7. Safety, Ethics, and Responsible AI Use
+7. [Safety, Ethics, and Responsible AI Use](https://gemini.google.com/app/b40a0860b9c83d99#7-safety-ethics-and-responsible-ai-use "null")
    
-   7.1. Content Sensitivity and Appropriateness
+   - [7.1. Content Sensitivity and Appropriateness](https://gemini.google.com/app/b40a0860b9c83d99#71-content-sensitivity-and-appropriateness "null")
    
-   7.2. Data Privacy and User Information
+   - [7.2. Data Privacy and User Information](https://gemini.google.com/app/b40a0860b9c83d99#72-data-privacy-and-user-information "null")
    
-   7.3. Source Attribution and Verification (for Factual Content)
+   - [7.3.](https://gemini.google.com/app/b40a0860b9c83d99#73-source-attribution-and-verification-for-factual-content "null") Source Attribution and Verification [(for Factual Content)](https://gemini.google.com/app/b40a0860b9c83d99#73-source-attribution-and-verification-for-factual-content "null")
    
-   7.4. User Feedback on Content Quality and Safety
+   - [7.4. User Feedback on Content Quality and Safety](https://gemini.google.com/app/b40a0860b9c83d99#74-user-feedback-on-content-quality-and-safety "null")
 
 8. [AI Agent Capabilities and Constraints](https://gemini.google.com/app/b40a0860b9c83d99#8-ai-agent-capabilities-and-constraints "null")
 
 9. [User Environment and Tooling](https://gemini.google.com/app/b40a0860b9c83d99#9-user-environment-and-tooling "null")
 
-10. Customization, Usage Scenarios, and Future Directions
+10. [Customization, Usage Scenarios, and Future Directions](https://gemini.google.com/app/b40a0860b9c83d99#10-customization-usage-scenarios-and-future-directions "null")
     
-    10.1. Customizing the Manifesto
+    - [10.1. Customizing the Manifesto](https://gemini.google.com/app/b40a0860b9c83d99#101-customizing-the-manifesto "null")
     
-    10.2. Possible Future Ideas & Enhancements (Beyond v1.0)
+    - [10.2. Possible Future Ideas & Enhancements (Beyond v1.0)](https://gemini.google.com/app/b40a0860b9c83d99#102-possible-future-ideas--enhancements-beyond-v10 "null")
     
-    10.3. Usage Notes & Best Practices
+    - [10.3. Usage Notes & Best Practices](https://gemini.google.com/app/b40a0860b9c83d99#103-usage-notes--best-practices "null")
     
-    10.4. Concrete Usage Scenarios (Examples)
+    - [10.4. Concrete Usage Scenarios (Examples)](https://gemini.google.com/app/b40a0860b9c83d99#104-concrete-usage-scenarios-examples "null")
 
-11. Repository Contents & Examples
+11. [Repository Contents & Examples](https://gemini.google.com/app/b40a0860b9c83d99#11-repository-contents--examples "null")
     
-    11.1. Key Files in this Repository
+    - [11.1. Key Files in this Repository](https://gemini.google.com/app/b40a0860b9c83d99#111-key-files-in-this-repository "null")
     
-    11.2. Using the Examples
+    - [11.2. Using the Examples](https://gemini.google.com/app/b40a0860b9c83d99#112-using-the-examples "null")
 
 12. [License](https://gemini.google.com/app/b40a0860b9c83d99#12-license "null")
 
@@ -72,11 +72,11 @@
 
 14. [Frequently Asked Questions (FAQ)](https://gemini.google.com/app/b40a0860b9c83d99#14-frequently-asked-questions-faq "null")
 
-15. Appendices
+15. [Appendices](https://gemini.google.com/app/b40a0860b9c83d99#15-appendices "null")
     
-    15.1. Appendix A: aitaskinput.json (v1.0) - Detailed Structure and Task Types
+    - [15.1. Appendix A: `aitaskinput.json` (v1.0) - Detailed Structure and Task Types](https://gemini.google.com/app/b40a0860b9c83d99#151-appendix-a-aitaskinputjson-v10---detailed-structure-and-task-types "null")
     
-    15.2. Appendix B: AI Agent Capabilities (v1.0) - Detailed Fields
+    - [15.2.](https://gemini.google.com/app/b40a0860b9c83d99#152-appendix-b-ai-agent-capabilities-v10---detailed-fields "null") Appendix B: AI Agent Capabilities (v1.0) [- Detailed Fields](https://gemini.google.com/app/b40a0860b9c83d99#152-appendix-b-ai-agent-capabilities-v10---detailed-fields "null")
 
 ## 1. Overview
 
@@ -200,7 +200,7 @@ This JSON file is the central control document for each delivery. It specifies t
   
   - `agent_capabilities`: (Object, Optional) A snapshot or reference to the AI agent's capabilities.
 
-For a detailed breakdown of the `aitaskinput.json` structure, task object fields, and available task types for v1.0, refer to **Appendix A: `aitaskinput.json` (v1.0) - Detailed Structure and Task Types**.
+For a detailed breakdown of the `aitaskinput.json` structure, task object fields, and available task types for v1.0, refer to **Appendix** A: `aitaskinput.json` (v1.0) - Detailed Structure **and Task Types**.
 
 ### 3.2. Content Chunks File (`YYYYMMDD_HHMMSS_UNIQUEID_project_content.txt`)
 
@@ -216,7 +216,7 @@ This plain text file contains the actual data (code, prose, structured data, Bas
   
   - **Content:** The lines between the start and end delimiters constitute the actual content for that chunk.
 
-**Example Run Log Chunk (within the content chunks file):**
+**Example** Run Log Chunk (within the content chunks **file):**
 
 ```
 // --- START CHUNK: run_log_content_20250528_131500_dEfGhI ---
@@ -257,7 +257,7 @@ New files are created based on tasks like `create_text_file`, `generate_prose`, 
 
 For `update_text_file` tasks, the AI provides the *complete new content* for the file in the corresponding content chunk.
 
-- For code files, this content may include Git-style diff markers (e.g., `<<<<<<< AI Update ... ======= ... >>>>>>> Local Original`) to visually highlight changes. The client script writes this entire content (including markers) to the local file. Users can then leverage Git tools or IDE features to review, accept, or merge these changes.
+- For code files, this content may include Git-style diff markers (e.g., `<<<<<<<` AI `Update ... ======= ... >>>>>>> Local Original`) to visually highlight changes. The client script writes this entire content (including markers) to the local file. Users can then leverage Git tools or IDE features to review, accept, or merge these changes.
 
 - For prose, structured data, or other non-code content where diff markers are less suitable, the AI should provide the complete new content and clearly explain the changes in the "AI Notes for This Run" section of the run log.
 
@@ -485,7 +485,7 @@ This Manifesto provides a foundational framework (v1.0), designed for evolution.
 
 - **AI Processing:** Generates new run ID, new manifest with `update_text_file` tasks for `src/app.py` and `README.md`.
 
-**Scenario 2: Research Assistance**
+**Scenario** 2: Research Assistance
 
 - **User Request:** "AI, I need a summary of the key challenges in renewable energy adoption, focusing on solar and wind power. Please provide it as a Markdown document and list any major reports or studies you referenced."
 
@@ -559,7 +559,7 @@ This GitHub repository serves as the home for the AI Collaboration Manifesto and
   
   - [Example: `generate_structured_data`](https://gemini.google.com/app/examples/generate_structured_data/ "null")
   
-  - [Example: `create_binary_file_base64`](https://gemini.google.com/app/examples/create_binary_file_base64/ "null")
+  - [Example:](https://gemini.google.com/app/examples/create_binary_file_base64/ "null") `create_binary_file_base64`
   
   - [Example: `create_binary_file_multipart_base64`](https://gemini.google.com/app/examples/create_binary_file_multipart_base64/ "null")
   
@@ -595,7 +595,7 @@ Consider licenses such as:
 
 - **Apache License 2.0:** Permissive, includes patent grant provisions.
 
-- **Creative** Commons (e.g., **CC BY 4.0):** Suitable for documentation, allowing sharing and adaptation with attribution.
+- **Creative Commons (e.g., CC BY 4.0):** Suitable for documentation, allowing sharing and adaptation with attribution.
 
 The choice of license should reflect the goals of the community or organization adopting and evolving this Manifesto. A `LICENSE.md` file should typically be included in the root of a repository containing this document.
 
