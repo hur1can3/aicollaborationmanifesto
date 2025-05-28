@@ -1,0 +1,4 @@
+// --- START CHUNK: run_log_cpfg ---AI Collaboration Run LogTimestamp: 2025-01-01 10:06:00 UTCRun Correlation ID: run_20250101100600_cpfg001Content Target: project_logs/20250101_100600_cpfg001_ai_collab_run.logAI Agent: Gemini AI 1.0-exampleManifest Format Version Used: 1.0--- AI Notes for This Run ---
+Summary of Generation:
+Provided content for a MyWebApp.csproj.txt file as a guide for a .NET web app.
+Tasks Delivered: log_cpfg_run, generate_csproj_guide// --- END CHUNK: run_log_cpfg ---// --- START CHUNK: csproj_guide_content ---

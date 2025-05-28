@@ -1,0 +1,47 @@
+{
+  "manifest_format_version": "1.0",
+  "project_name": "Multipart Data File",
+  "description": "Creating a data file from two Base64 parts.",
+  "current_run_correlation_id": "run_20250101100500_cbfmp001",
+  "solution_root_hint": "./output_createBinaryMultipart",
+  "content_chunk_file": "20250101_100500_cbfmp001_project_content.txt",
+  "ai_agent_profile": {
+    "agent_name": "Gemini AI",
+    "agent_version": "1.0-example",
+    "capabilities_ref": "gemini_core_capabilities_v1"
+  },
+  "tasks": [
+    {
+      "task_id": "log_cbfmp_run",
+      "type": "create_text_file",
+      "file_path": "project_logs/20250101_100500_cbfmp001_ai_collab_run.log",
+      "content_chunk_id": "run_log_cbfmp"
+    },
+    {
+      "task_id": "data_file_part1",
+      "type": "create_binary_file_multipart_base64",
+      "file_path": "data/multipart_data.txt",
+      "encoding": "base64",
+      "part_number": 1,
+      "total_parts": 2,
+      "assembly_id": "mp_data_001",
+      "content_chunk_id": "data_file_part1_base64"
+    },
+    {
+      "task_id": "data_file_part2",
+      "type": "create_binary_file_multipart_base64",
+      "file_path": "data/multipart_data.txt",
+      "encoding": "base64",
+      "part_number": 2,
+      "total_parts": 2,
+      "assembly_id": "mp_data_001",
+      "content_chunk_id": "data_file_part2_base64"
+    }
+  ],
+  "agent_capabilities": {
+    "gemini_core_capabilities_v1": {
+        "manifesto_versions_supported": ["1.0"],
+        "supported_task_types": ["create_text_file", "create_binary_file_multipart_base64"]
+    }
+  }
+}

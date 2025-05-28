@@ -1,0 +1,36 @@
+{
+  "manifest_format_version": "1.0",
+  "project_name": "Greeting App",
+  "description": "Initial greeting message file creation.",
+  "current_run_correlation_id": "run_20250101100000_ctf001",
+  "solution_root_hint": "./output_createTextFile",
+  "content_chunk_file": "20250101_100000_ctf001_project_content.txt",
+  "ai_agent_profile": {
+    "agent_name": "Gemini AI",
+    "agent_version": "1.0-example",
+    "capabilities_ref": "gemini_core_capabilities_v1"
+  },
+  "tasks": [
+    {
+      "task_id": "log_ctf_run",
+      "type": "create_text_file",
+      "file_path": "project_logs/20250101_100000_ctf001_ai_collab_run.log",
+      "content_chunk_id": "run_log_ctf"
+    },
+    {
+      "task_id": "create_greeting_txt",
+      "type": "create_text_file",
+      "file_path": "messages/greeting.txt",
+      "content_chunk_id": "greeting_txt_content"
+    }
+  ],
+  "post_processing_commands": [
+    "echo 'Greeting file created.'"
+  ],
+  "agent_capabilities": {
+    "gemini_core_capabilities_v1": {
+        "manifesto_versions_supported": ["1.0"],
+        "supported_task_types": ["create_text_file"]
+    }
+  }
+}

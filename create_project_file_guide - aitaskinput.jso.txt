@@ -1,0 +1,36 @@
+{
+  "manifest_format_version": "1.0",
+  "project_name": "DotNet Project Guide",
+  "description": "Providing a guide for a .csproj file.",
+  "current_run_correlation_id": "run_20250101100600_cpfg001",
+  "solution_root_hint": "./output_createProjectGuide",
+  "content_chunk_file": "20250101_100600_cpfg001_project_content.txt",
+  "ai_agent_profile": {
+    "agent_name": "Gemini AI",
+    "agent_version": "1.0-example",
+    "capabilities_ref": "gemini_core_capabilities_v1"
+  },
+  "tasks": [
+    {
+      "task_id": "log_cpfg_run",
+      "type": "create_text_file",
+      "file_path": "project_logs/20250101_100600_cpfg001_ai_collab_run.log",
+      "content_chunk_id": "run_log_cpfg"
+    },
+    {
+      "task_id": "generate_csproj_guide",
+      "type": "create_project_file_guide",
+      "file_path": "MyWebApp.csproj.txt",
+      "content_chunk_id": "csproj_guide_content"
+    }
+  ],
+  "post_processing_commands": [
+    "echo 'Review MyWebApp.csproj.txt and use it as a guide when running: dotnet new webapp -n MyWebApp'"
+  ],
+  "agent_capabilities": {
+    "gemini_core_capabilities_v1": {
+        "manifesto_versions_supported": ["1.0"],
+        "supported_task_types": ["create_text_file", "create_project_file_guide"]
+    }
+  }
+}
